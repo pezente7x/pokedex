@@ -40,7 +40,7 @@ formulario.addEventListener("submit", function (e) {
         "'>";
     })
     .catch(function (err) {
-      if (err == "Pokémon não encontrado!") {
+      if (err) {
         html = "Pokémon não encontrado! 😒";
       } else {
         html = err;
